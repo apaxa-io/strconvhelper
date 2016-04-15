@@ -92,11 +92,11 @@ func TestParseInt(t *testing.T) {
 	for j, v := range test {
 		i, err := ParseInt(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseInt - %v.\nError expected: %v, got: %v", j, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", j, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if i != v.i {
-				t.Errorf("TestParseInt - %v. Wrong parse. Expected int: %v, got: %v", j, v.i, i)
+				t.Errorf("Test-%v.Wrong parse. Expected int: %v, got: %v", j, v.i, i)
 			}
 		}
 	}
@@ -185,11 +185,11 @@ func TestParseInt8(t *testing.T) {
 	for i, v := range test {
 		i8, err := ParseInt8(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseInt8 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if i8 != v.i {
-				t.Errorf("TestParseInt8 - %v. Wrong parse. Expected int: %v, got: %v", i, v.i, i8)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.i, i8)
 			}
 		}
 	}
@@ -278,11 +278,11 @@ func TestParseInt16(t *testing.T) {
 	for i, v := range test {
 		i16, err := ParseInt16(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseInt16 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if i16 != v.i {
-				t.Errorf("TestParseInt16 - %v. Wrong parse. Expected int: %v, got: %v", i, v.i, i16)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.i, i16)
 			}
 		}
 	}
@@ -371,11 +371,11 @@ func TestParseInt32(t *testing.T) {
 	for i, v := range test {
 		i32, err := ParseInt32(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseInt32 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if i32 != v.i {
-				t.Errorf("TestParseInt32 - %v. Wrong parse. Expected int: %v, got: %v", i, v.i, i32)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.i, i32)
 			}
 		}
 	}
@@ -464,11 +464,11 @@ func TestParseInt64(t *testing.T) {
 	for i, v := range test {
 		i64, err := ParseInt64(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseInt64 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if i64 != v.i {
-				t.Errorf("TestParseInt64 - %v. Wrong parse. Expected int: %v, got: %v", i, v.i, i64)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.i, i64)
 			}
 		}
 	}
@@ -557,11 +557,11 @@ func TestParseUint(t *testing.T) {
 	for j, v := range test {
 		u, err := ParseUint(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseUint - %v.\nError expected: %v, got: %v", j, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", j, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if u != v.u {
-				t.Errorf("TestParseUint - %v. Wrong parse. Expected int: %v, got: %v", j, v.u, u)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", j, v.u, u)
 			}
 		}
 	}
@@ -648,11 +648,11 @@ func TestParseUint8(t *testing.T) {
 	for i, v := range test {
 		u8, err := ParseUint8(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseUint8 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if u8 != v.u {
-				t.Errorf("TestParseUint8 - %v. Wrong parse. Expected int: %v, got: %v", i, v.u, u8)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.u, u8)
 			}
 		}
 	}
@@ -741,11 +741,11 @@ func TestParseUint16(t *testing.T) {
 	for i, v := range test {
 		u16, err := ParseUint16(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseUint16 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if u16 != v.u {
-				t.Errorf("TestParseUint16 - %v. Wrong parse. Expected int: %v, got: %v", i, v.u, u16)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.u, u16)
 			}
 		}
 	}
@@ -834,11 +834,11 @@ func TestParseUint32(t *testing.T) {
 	for i, v := range test {
 		u32, err := ParseUint32(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseUint32 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if u32 != v.u {
-				t.Errorf("TestParseUint32 - %v. Wrong parse. Expected int: %v, got: %v", i, v.u, u32)
+				t.Errorf("Test-%v. Wrong parse. Expected int: %v, got: %v", i, v.u, u32)
 			}
 		}
 	}
@@ -927,11 +927,11 @@ func TestParseUint64(t *testing.T) {
 	for i, v := range test {
 		u64, err := ParseUint64(v.s)
 		if (err != nil) != v.err {
-			t.Errorf("\nTestParseUint64 - %v.\nError expected: %v, got: %v", i, v.err, err)
+			t.Errorf("Test-%v\nError expected: %v, got: %v", i, v.err, err)
 		}
 		if !v.err && (err == nil) {
 			if u64 != v.u {
-				t.Errorf("TestParseUint64 - %v. Wrong parse. Expected uint64: %v, got: %v", i, v.u, u64)
+				t.Errorf("Test-%v. Wrong parse. Expected uint64: %v, got: %v", i, v.u, u64)
 			}
 		}
 	}

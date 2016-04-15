@@ -16,7 +16,7 @@ func TestFormatInt(t *testing.T) {
 	for i, v := range test {
 		s := FormatInt(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatInt - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -35,7 +35,7 @@ func TestFormatInt8(t *testing.T) {
 	for i, v := range test {
 		s := FormatInt8(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatInt8 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -54,7 +54,7 @@ func TestFormatInt16(t *testing.T) {
 	for i, v := range test {
 		s := FormatInt16(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatInt16 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -73,7 +73,7 @@ func TestFormatInt32(t *testing.T) {
 	for i, v := range test {
 		s := FormatInt32(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatInt32 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -92,7 +92,7 @@ func TestFormatInt64(t *testing.T) {
 	for i, v := range test {
 		s := FormatInt64(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatInt64 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -110,7 +110,7 @@ func TestFormatUint(t *testing.T) {
 	for i, v := range test {
 		s := FormatUint(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatUint - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -128,7 +128,7 @@ func TestFormatUint8(t *testing.T) {
 	for i, v := range test {
 		s := FormatUint8(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatUint8 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -146,7 +146,7 @@ func TestFormatUint16(t *testing.T) {
 	for i, v := range test {
 		s := FormatUint16(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatUint16 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -164,7 +164,7 @@ func TestFormatUint32(t *testing.T) {
 	for i, v := range test {
 		s := FormatUint32(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatUint32 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
@@ -182,7 +182,7 @@ func TestFormatUint64(t *testing.T) {
 	for i, v := range test {
 		s := FormatUint64(v.i)
 		if s != v.s {
-			t.Errorf("TestFormatUint64 - %v\n Expected string: %s, got: %s", i, v.s, s)
+			t.Errorf("Test-%v\nExpected string: %s, got: %s", i, v.s, s)
 		}
 	}
 }
